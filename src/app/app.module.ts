@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './modules/login/login.module';
 import { CadastroComponent } from './modules/cadastro/cadastro.component';
 import { NavbarCadastroComponent } from './shared/navbar-cadastro/navbar-cadastro.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NavbarCadastroComponent } from './shared/navbar-cadastro/navbar-cadastr
     BrowserModule,
     AppRoutingModule,
     LoginModule,
+    MatToolbarModule,
     BrowserAnimationsModule
   ],
   providers: [],
