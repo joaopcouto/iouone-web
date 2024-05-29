@@ -20,7 +20,6 @@
 .login-button {
     font-weight: bold;
     color: var(--Preto);
-    cursor: pointer;
 }
 
 .login-button:hover {
