@@ -5,20 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './modules/login/login.module';
-import { CadastroComponent } from './modules/cadastro/cadastro.component';
-import { NavbarCadastroComponent } from './shared/navbar-cadastro/navbar-cadastro.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { CadastroModule } from './modules/cadastro/cadastro.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CadastroComponent,
-    NavbarCadastroComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
+    CadastroModule,
     MatToolbarModule,
     BrowserAnimationsModule
   ],
