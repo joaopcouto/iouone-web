@@ -1,7 +1,9 @@
 <app-navbar-cadastro></app-navbar-cadastro>
 
 <main class="container">
-    <p><i class="fa-regular fa-arrow-left"></i></p>
+    <a href="/login">
+        <p><i class="fa-regular fa-arrow-left"></i></p>
+    </a>
     <p class="step-text">PASSO 1 DE 4</p>
     <h1 class="welcome-text">Bem vinda!</h1>
     <h2 class="easy-signup">É fácil assinar a IouOne.</h2>
@@ -16,9 +18,7 @@
             <mat-label>Senha</mat-label>
             <input matInput placeholder="Digite sua senha" type="password">
         </mat-form-field>
-        
+
         <app-enter-button [textButton]="textButton" [redireciona]="redireciona"></app-enter-button>
     </form>
 </main>
-
-
