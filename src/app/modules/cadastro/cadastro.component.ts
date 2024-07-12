@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CadastroComponent {
 
+  textButton:string = "Próximo";
+  redireciona: string = "/cadastro/dados"
+
 }

@@ -23,6 +23,11 @@
 
 .instruction-text {
     font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.instruction-text-text {
+    font-size: 16px;
     margin-bottom: 30px;
 }
 
@@ -34,8 +39,24 @@
     width: 100%;
 }
 
+.form-field-half {
+    width: 48%;
+    flex: 1;
+    margin-right: 10px;
+}
+
 mat-form-field {
     width: 100%;
+}
+.separador {
+    display: flex;
+    justify-content: space-between;
+    /* Distribui o espaço entre os elementos */
+}
+
+.form-field-half:last-child {
+    margin-right: 0;
+    /* Remove o espaço à direita do último campo */
 }
 
 @media (max-width: 500px) {

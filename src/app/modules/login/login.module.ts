@@ -21,7 +21,6 @@ import { EnterButtonModule } from 'src/app/shared/enter-button/enter-button.modu
     MatInputModule,
     MatGridListModule,
     MatCheckboxModule,
-    MatButtonModule,
     EnterButtonModule,
     MatFormFieldModule
   ]

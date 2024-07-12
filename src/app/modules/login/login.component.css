@@ -75,3 +75,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.register-button-button {
+    color: var(--Rosa-pink);
+}
