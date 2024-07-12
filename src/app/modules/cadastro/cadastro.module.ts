@@ -5,9 +5,9 @@ import { NavbarCadastroModule } from 'src/app/shared/navbar-cadastro/navbar-cada
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
-import { EnterButtonModule } from 'src/app/shared/enter-button/enter-button.module';
 import { DadosDoClienteComponent } from './dados-do-cliente/dados-do-cliente.component';
 import { DadosCorporalComponent } from './dados-corporal/dados-corporal.component';
+import { EnterButtonModule } from 'src/app/shared/buttons/enter-button/enter-button.module';
 
 
 

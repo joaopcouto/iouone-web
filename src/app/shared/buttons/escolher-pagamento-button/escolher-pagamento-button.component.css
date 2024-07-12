@@ -1,0 +1,46 @@
+.mdc-button {
+  margin-top: 12px;
+  justify-content: unset;
+}
+
+.button-content[_ngcontent-ng-c3679718215] {
+  display: unset;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+}
+
+.payment-button a {
+  width: 100%;
+  min-height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.button-text {
+  margin-right: 10px;
+}
+
+.card-logos {
+  display: flex;
+  align-items: center;
+}
+
+.card-logo {
+  height: 20px;
+  margin: 0 5px;
+}
+
+.chevron-icon {
+  margin-left: auto;
+}

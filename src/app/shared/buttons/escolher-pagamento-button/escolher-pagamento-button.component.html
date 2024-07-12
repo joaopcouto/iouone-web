@@ -1,0 +1,15 @@
+<div class="payment-button">
+    <a mat-stroked-button [href]="redireciona">
+        <span class="button-content">
+            <span class="button-text">{{ textButton }}</span>
+            <span class="card-logos">
+                <img *ngFor="let card of cardLogos" [src]="card" alt="Card Logo" class="card-logo" />
+            </span>
+            <!--
+            <span class="chevron-icon">
+                <i class="fa-solid fa-chevron-right right-icon"></i>
+            </span>
+            -->
+        </span>
+    </a>
+</div>

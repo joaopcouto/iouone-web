@@ -10,8 +10,8 @@ import { EnterButtonComponent } from './enter-button.component';
     EnterButtonComponent
   ],
   imports: [
-    MatButtonModule,
-    CommonModule
+    CommonModule,
+    MatButtonModule
   ],
   exports: [
     EnterButtonComponent
