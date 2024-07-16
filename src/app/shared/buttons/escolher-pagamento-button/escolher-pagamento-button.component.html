@@ -1,15 +1,13 @@
-<div class="payment-button">
-    <a mat-stroked-button [href]="redireciona">
-        <span class="button-content">
+<button class="custom-button" (click)="redirectToCards()">
+    <div class="nameAndLogos">
+        <div class="payment-text">
             <span class="button-text">{{ textButton }}</span>
-            <span class="card-logos">
-                <img *ngFor="let card of cardLogos" [src]="card" alt="Card Logo" class="card-logo" />
+        </div>
+        <div class="logosContainer">
+            <span class="logos logos-inline">
+                <img *ngFor="let logo of cardLogos" [src]="logo" alt="Card logo" class="logoIcon" />
             </span>
-            <!--
-            <span class="chevron-icon">
-                <i class="fa-solid fa-chevron-right right-icon"></i>
-            </span>
-            -->
-        </span>
-    </a>
-</div>
+        </div>
+    </div>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+</button>
