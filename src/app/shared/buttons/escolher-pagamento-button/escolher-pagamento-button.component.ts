@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-escolher-pagamento-button',
@@ -10,5 +11,11 @@ export class EscolherPagamentoButtonComponent {
   @Input() textButton: string = '';
   @Input() cardLogos: string[] = [];
   @Input() redireciona: string = '#';
+
+  constructor(private router: Router) {}
+
+  redirectToCards(): void {
+    this.router.navigate(['/cartoes']);
+  }
 
 }
