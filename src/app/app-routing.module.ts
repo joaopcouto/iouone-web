@@ -5,6 +5,7 @@ import { CadastroComponent } from './modules/cadastro/cadastro.component';
 import { DadosDoClienteComponent } from './modules/cadastro/dados-do-cliente/dados-do-cliente.component';
 import { DadosCorporalComponent } from './modules/cadastro/dados-corporal/dados-corporal.component';
 import { MeioPagamentoComponent } from './modules/pagamento/meio-pagamento/meio-pagamento.component';
+import { CartaoComponent } from './modules/pagamento/cartao/cartao.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path:'cadastro/pagamento', component: MeioPagamentoComponent
+  },
+  {
+    path:'cadastro/pagamento/cartao', component: CartaoComponent
   }
 ];
 
