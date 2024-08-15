@@ -5,7 +5,7 @@ import { MeioPagamentoComponent } from './meio-pagamento/meio-pagamento.componen
 import { EscolherPagamentoButtonModule } from 'src/app/shared/buttons/escolher-pagamento-button/escolher-pagamento-button.module';
 import { BotaoCartaoComponent } from './meio-pagamento/botao-cartao/botao-cartao.component';
 import { BotaoPixComponent } from './meio-pagamento/botao-pix/botao-pix.component';
-import { CartaoComponent } from './cartao/cartao.component';
+import { CartaoModule } from './cartao/cartao.module';
 
 
 
@@ -13,13 +13,13 @@ import { CartaoComponent } from './cartao/cartao.component';
   declarations: [
     MeioPagamentoComponent, 
     BotaoCartaoComponent, 
-    BotaoPixComponent, 
-    CartaoComponent
+    BotaoPixComponent
   ],
   imports: [
     CommonModule,
     NavbarCadastroModule,
-    EscolherPagamentoButtonModule
+    EscolherPagamentoButtonModule,
+    CartaoModule
   ]
 })
 export class PagamentoModule { }
