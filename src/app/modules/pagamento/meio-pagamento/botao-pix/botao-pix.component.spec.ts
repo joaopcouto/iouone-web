@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PixComponent } from './pix.component';
+import { BotaoPixComponent } from './botao-pix.component';
 
-describe('PixComponent', () => {
-  let component: PixComponent;
-  let fixture: ComponentFixture<PixComponent>;
+describe('BotaoPixComponent', () => {
+  let component: BotaoPixComponent;
+  let fixture: ComponentFixture<BotaoPixComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PixComponent]
+      declarations: [BotaoPixComponent]
     });
-    fixture = TestBed.createComponent(PixComponent);
+    fixture = TestBed.createComponent(BotaoPixComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

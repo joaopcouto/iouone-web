@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pix',
-  templateUrl: './pix.component.html',
-  styleUrls: ['./pix.component.css']
+  selector: 'app-botao-pix',
+  templateUrl: './botao-pix.component.html',
+  styleUrls: ['./botao-pix.component.css']
 })
-export class PixComponent {
+export class BotaoPixComponent {
 
   textButton: string = 'Pix';
   cardLogos: string[] = ['/assets/images/pix.png'];
