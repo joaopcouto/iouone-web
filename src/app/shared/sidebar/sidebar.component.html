@@ -1,13 +1,24 @@
-<mat-sidenav-container class="container">
+<button
+  *ngIf="isMobile"
+  mat-icon-button
+  class="menu-button"
+  aria-label="Menu icon"
+  (click)="toggleMenu()"
+>
+  <mat-icon class="material-symbols-outlined">menu</mat-icon>
+</button>
+
+<mat-sidenav-container autosize class="container">
   <mat-sidenav
+    [mode]="isMobile ? 'over' : 'side'"
+    [opened]="isMobile ? 'false' : 'true'"
     class="sidenav"
-    mode="side"
-    opened
     fixedInViewport="true"
     fixedTopGap="90"
   >
-    <mat-nav-list class="nav-list">
+    <mat-nav-list class="nav-list" *ngIf="isCollapsed">
       <a
+        (click)="closeSidebar()"
         class="item-list"
         routerLink="/nutricionista"
         mat-list-item
@@ -22,6 +33,7 @@
         <span class="text-list">Área Nutricionista</span>
       </a>
       <a
+        (click)="closeSidebar()"
         class="item-list"
         routerLink="/dietas"
         mat-list-item
@@ -36,6 +48,7 @@
         <span class="text-list">Dietas atualizadas todo mês</span>
       </a>
       <a
+        (click)="closeSidebar()"
         class="item-list"
         routerLink="/treino"
         mat-list-item
@@ -49,9 +62,13 @@
         />
         <span class="text-list">Treino atuliazado todo mês</span>
       </a>
-      <a class="item-list"
-      routerLink="/exercicios"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/exercicios"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -60,9 +77,13 @@
         />
         <span class="text-list">Exercícios emagreça em casa</span>
       </a>
-      <a class="item-list"
-      routerLink="/fitdance"      
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/fitdance"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -71,9 +92,13 @@
         />
         <span class="text-list">Fit dance</span>
       </a>
-      <a class="item-list" 
-      routerLink="/desinchar"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/desinchar"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -82,9 +107,13 @@
         />
         <span class="text-list">Chás para desinchar</span>
       </a>
-      <a class="item-list"
-      routerLink="/cardapio"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/cardapio"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -93,9 +122,13 @@
         />
         <span class="text-list">Cardápio da semana low carb</span>
       </a>
-      <a class="item-list" 
-      routerLink="/calculadora"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/calculadora"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -104,9 +137,13 @@
         />
         <span class="text-list">Calculadora TDEE</span>
       </a>
-      <a class="item-list" 
-      routerLink="/perder-gordura"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/perder-gordura"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -115,9 +152,13 @@
         />
         <span class="text-list">Chás para perder gordura</span>
       </a>
-      <a class="item-list" 
-      routerLink="/marmita"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/marmita"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -126,9 +167,13 @@
         />
         <span class="text-list">Marmita fit congelada</span>
       </a>
-      <a class="item-list" 
-      routerLink="/detox"
-      mat-list-item routerLinkActive="active-link">
+      <a
+        (click)="closeSidebar()"
+        class="item-list"
+        routerLink="/detox"
+        mat-list-item
+        routerLinkActive="active-link"
+      >
         <img
           matListItemIcon
           class="img-list"
@@ -137,17 +182,17 @@
         />
         <span class="text-list">Receita detox</span>
       </a>
-    </mat-nav-list>
 
-    <img class="line" src="../../../assets/sidebar/line.png" alt="" />
+      <img class="line" src="../../../assets/sidebar/line.png" alt="" />
 
-    <mat-nav-list>
-      <a class="last-item">
-        <img
-          src="../../../assets/sidebar/projeto-30-dias.png"
-          alt="Projeto 30 dias"
-        />
-      </a>
+      <mat-nav-list>
+        <a class="last-item">
+          <img
+            src="../../../assets/sidebar/projeto-30-dias.png"
+            alt="Projeto 30 dias"
+          />
+        </a>
+      </mat-nav-list>
     </mat-nav-list>
   </mat-sidenav>
 </mat-sidenav-container>

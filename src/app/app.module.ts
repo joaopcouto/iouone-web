@@ -24,6 +24,9 @@ import { CalculadoraComponent } from './modules/views/calculadora/calculadora.co
 import { GorduraComponent } from './modules/views/gordura/gordura.component';
 import { MarmitaComponent } from './modules/views/marmita/marmita.component';
 import { DetoxComponent } from './modules/views/detox/detox.component';
+import { CardComponent } from './shared/card/card.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,7 @@ import { DetoxComponent } from './modules/views/detox/detox.component';
     GorduraComponent,
     MarmitaComponent,
     DetoxComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,8 @@ import { DetoxComponent } from './modules/views/detox/detox.component';
     PagamentoModule,
     MatSidenavModule,
     MatListModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

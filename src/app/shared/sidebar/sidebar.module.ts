@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatSidenav } from '@angular/material/sidenav';
+import {MatIcon} from '@angular/material/icon';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule],
+  imports: [CommonModule, MatSidenav, MatIcon],
 })
-export class SidebarModule {}
+export class SidebarModule {
+  constructor() {}
+}
