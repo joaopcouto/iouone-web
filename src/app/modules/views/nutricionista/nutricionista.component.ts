@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./nutricionista.component.css']
 })
 export class NutricionistaComponent {
+
 }
